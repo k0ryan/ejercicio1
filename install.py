@@ -25,6 +25,8 @@ def main():
 	
 	while (True):
 		r("cat /var/log/skeylogger.log")
+		for x in range(0, 20):
+			r("echo")
 		time.sleep(2)	
 
 if __name__ == "__main__":
